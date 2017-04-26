@@ -10,6 +10,7 @@ library(shiny)
 library(parcoords)
 library(d3heatmap)
 library(tibble)
+library(dplyr)
 
 
 ##
