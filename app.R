@@ -1,5 +1,9 @@
 
 if (!require("devtools")) install.packages("devtools")
+if (!require("parcoords")) devtools::install_github("timelyportfolio/parcoords")
+if (!require("d3heatmap")) devtools::install_github("rstudio/d3heatmap")
+if (!require("pairsD3")) devtools::install_github("garthtarr/pairsD3")
+if (!require('tibble')) install.packages('tibble')
 #devtools::install_github("garthtarr/pairsD3")
 #devtools::install_github("timelyportfolio/parcoords")
 #devtools::install_github("rstudio/d3heatmap")
@@ -13,8 +17,8 @@ library(tibble)
 library(dplyr)
 
 
-##
-setwd('/Users/linda/msan622/lesson5/')
+
+#setwd('/Users/linda/msan622/lesson5/')
 a<-read.table('dataset_Facebook.csv',header=TRUE,sep = ";") 
 tweaks <- 
   list(tags$head(tags$style(HTML("
